@@ -1,7 +1,16 @@
 import React from "react"
+import { AppContainer } from "./AppStyles"
+import { Home } from "./Sections/Home/Home"
+import Theme from "./styles/theme"
 
 function App() {
-  return <div>Hello World</div>
+  return (
+    <Theme>
+      <AppContainer>
+        <Home />
+      </AppContainer>
+    </Theme>
+  )
 }
 
 export default App
