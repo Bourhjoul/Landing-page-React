@@ -17,12 +17,12 @@ interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = () => {
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <Navbar />
       <HomeSection>
         <Sectionparagraph>
           <SectionTitle>
-            Nous vous aidons à trouver le bon locataire.{" "}
+            Nous vous aidons à trouver le bon locataire.
           </SectionTitle>
           <br />
           <p style={{ fontSize: "18px" }}>

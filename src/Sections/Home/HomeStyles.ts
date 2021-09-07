@@ -37,7 +37,6 @@ export const SectionTitle = styled.p`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 20px;
-    text-align: left;
     font-weight: 600;
   }
 `
