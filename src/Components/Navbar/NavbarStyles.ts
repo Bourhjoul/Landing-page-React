@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const Nav = styled.nav`
   display: flex;
   max-width: 1380px;
-
   width: 100%;
   height: 70px;
   align-items: center;
@@ -12,6 +11,7 @@ export const Nav = styled.nav`
     flex-direction: column;
     justify-content: center;
     margin-bottom: 3rem;
+    row-gap: 20px;
   }
 `
 
