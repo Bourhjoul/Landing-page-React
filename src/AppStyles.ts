@@ -5,4 +5,5 @@ export const AppContainer = styled.div`
 
   width: 100%;
   margin: auto;
+  overflow: hidden;
 `

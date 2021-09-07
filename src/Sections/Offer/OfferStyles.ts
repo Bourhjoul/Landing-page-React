@@ -6,6 +6,10 @@ export const OfferContainer = styled.section`
   padding: 10px 7vw;
   align-items: center;
   min-height: 300px;
+  @media ${(props) => props.theme.breakpoints.md} {
+    flex-direction: column-reverse;
+    /* padding: 10px 2vw; */
+  }
 `
 
 export const SectionTitle = styled.p`
@@ -26,7 +30,8 @@ export const ParagraphContainer = styled.div`
 `
 
 export const OneImage = styled.img`
-  height: 400px;
-  flex: 1.5;
+  height: 500px;
+  width: 500px;
+  flex: 1;
   object-fit: contain;
 `
