@@ -20,5 +20,5 @@ export const InputStyled = styled.input<{ error: boolean }>`
 `
 export const FormMessage = styled.p<{ success?: boolean }>`
   font-size: 14px;
-  color: ${(props) => (props.success ? "#" : "#1F638A")};
+  color: ${(props) => (props.success ? "#1F638A" : "#ed695f")};
 `

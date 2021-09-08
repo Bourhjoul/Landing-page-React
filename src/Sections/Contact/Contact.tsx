@@ -3,16 +3,18 @@ import React, { useState } from "react"
 import { Button } from "../../Components/Button/Button"
 import { Input } from "../../Components/Input/Input"
 import * as yup from "yup"
-
 import { ContactContainer, FormContainer, SectionTitle } from "./ContactStyles"
 import { FormMessage } from "../../Components/Input/InputStyled"
 
 interface ContactProps {}
 
 const validationSchema = yup.object({
-  Nom: yup.string().required("").max(20),
-  Prenom: yup.string().required().max(20),
-  Email: yup.string().required().email(),
+  Nom: yup.string().required("Nom est un champ obligatoire").max(20),
+  Prenom: yup.string().required("Prenom est un champ obligatoire").max(20),
+  Email: yup
+    .string()
+    .required("Email est un champ obligatoire")
+    .email("Email doit contenir @example.com"),
   Telephone: yup
     .string()
     .min(10, "Le téléphone doit être composé de 10 numéros")
@@ -20,7 +22,7 @@ const validationSchema = yup.object({
   Civilite: yup
     .mixed()
     .oneOf(["Monsieur", "Madame"], "La civilite : Madame,Monsieur")
-    .required(),
+    .required("Civilite est un champ obligatoire"),
 })
 
 export const Contact: React.FC<ContactProps> = () => {

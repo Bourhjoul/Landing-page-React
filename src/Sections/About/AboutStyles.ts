@@ -18,7 +18,7 @@ export const Proposals = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 50px;
   grid-column-gap: 150px;
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     grid-template-columns: 1fr;
   }
 `

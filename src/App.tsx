@@ -10,6 +10,7 @@ import {
 } from "./AppStyles"
 import { About } from "./Sections/About/About"
 import { Contact } from "./Sections/Contact/Contact"
+import { Footer } from "./Sections/Footer/Footer"
 import { Home } from "./Sections/Home/Home"
 import { Offer } from "./Sections/Offer/Offer"
 import Theme from "./styles/theme"
@@ -44,6 +45,7 @@ function App() {
             </SvgbackgroundBottom>
           </Wave>
         </BottomContainer>
+        <Footer />
       </AppContainer>
     </Theme>
   )
