@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.section`
   display: flex;
   flex-direction: column;
   row-gap: 80px;

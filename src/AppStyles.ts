@@ -38,6 +38,7 @@ export const Wave = styled.div`
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  border-bottom: 80px;
 `
 export const SvgbackgroundTop = styled.svg`
   position: relative;
